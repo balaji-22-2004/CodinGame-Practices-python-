@@ -1,0 +1,26 @@
+our program must print N times a given word, on separate lines.
+
+INPUT:
+Line 1: An integer N.
+Line 2: A word W.
+
+OUTPUT:
+N lines containing W.
+
+CONSTRAINTS:
+0 < N < 100
+
+EXAMPLE:
+Input
+2
+Hello
+Output
+Hello
+Hello
+
+Solution:
+
+n = int(input())
+w = input()
+for i in range(n):
+    print(w)
