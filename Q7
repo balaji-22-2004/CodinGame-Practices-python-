@@ -1,0 +1,19 @@
+40 3
+W 120
+D 120
+D 30
+70
+
+Solution:
+
+v, n = [int(i) for i in input().split()]
+for i in range(n):
+    inputs = input().split()
+    transaction = inputs[0]
+    amount = int(inputs[1])
+    if transaction == 'D':
+            v += amount
+    elif transaction == 'W':
+            v -= amount
+print(v)
+    
